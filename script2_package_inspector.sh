@@ -7,10 +7,10 @@
 #              and prints a philosophy note based on the package name.
 # =============================================================================
 
-# --- Target package (our chosen OSS project) ---
+# Target package (our chosen OSS project)
 PACKAGE="git"
 
-# --- Check if the package is installed (works on both RPM and Debian systems) ---
+# Check if the package is installed (works on both RPM and Debian systems)
 echo "=================================================================="
 echo "           FOSS PACKAGE INSPECTOR — $PACKAGE"
 echo "=================================================================="
@@ -45,7 +45,7 @@ else
     fi
 fi
 
-# --- If-then-else: act based on install status ---
+# If-then-else: act based on install status
 if [ "$PKG_INSTALLED" = true ]; then
     echo "  [✔] $PACKAGE is INSTALLED on this system."
     echo ""
@@ -75,7 +75,7 @@ echo "                    PHILOSOPHY NOTES"
 echo "=================================================================="
 echo ""
 
-# --- Case statement: print a philosophy note per package ---
+# Case statement: print a philosophy note per package 
 # Match the chosen package to its specific open-source history
 case $PACKAGE in
     git)
