@@ -79,20 +79,26 @@ No arguments needed. The script audits a predefined list of directories.
 Script 4 - Log File Analyzer
 Bash
 
-## Basic usage - search for 'error' in a log file
+Basic usage - search for 'error' in a log file
 ./script4_log_analyzer.sh /var/log/syslog# Custom keyword
 ./script4_log_analyzer.sh /var/log/syslog WARNING# On Ubuntu, syslog might be at:
 ./script4_log_analyzer.sh /var/log/syslog error# On Fedora/RHEL, try:
 ./script4_log_analyzer.sh /var/log/messages error
 
-## Open Source Manifesto Generator
+Script 5 - Open Source Manifesto Generator
 Bash
 
 ./script5_manifesto_generator.sh
 Follow the interactive prompts. The generated manifesto is saved to manifesto_[username].txt in the current directory.
 
 ## Dependencies
-DependencyRequired ByInstall CommandbashAll scriptsPre-installed on all Linux distrosgitScript 2sudo apt install git or sudo dnf install gitcoreutils (uname, uptime, date, whoami, du, ls)Scripts 1, 3Pre-installedgrepScripts 2, 4Pre-installedawkScripts 3Pre-installed (part of gawk)
+| Dependency | Required By | Install Command |
+|------------|-------------|-----------------|
+| `bash` | All scripts | Pre-installed on all Linux distros |
+| `git` | Script 2 | `sudo apt install git` or `sudo dnf install git` |
+| `coreutils` (uname, uptime, date, whoami, du, ls) | Scripts 1, 3 | Pre-installed |
+| `grep` | Scripts 2, 4 | Pre-installed |
+| `awk` | Scripts 3 | Pre-installed (part of gawk) |
 
 ## Notes
 Scripts are written for bash specifically. Running with sh may cause issues on systems where sh is dash (e.g., Ubuntu).
