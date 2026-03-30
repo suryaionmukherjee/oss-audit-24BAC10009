@@ -61,21 +61,25 @@ Bash
 
 chmod +x *.sh
 Step 3: Run each script
+
 Script 1 - System Identity Report
 Bash
 
 ./script1_system_identity.sh
 No arguments needed. Simply run and observe the output.
+
 Script 2 - FOSS Package Inspector
 Bash
 
 ./script2_package_inspector.sh
 No arguments needed. The script checks for git by default. Edit the PACKAGE variable to check other software.
+
 Script 3 - Disk and Permission Auditor
 Bash
 
 ./script3_disk_permission_auditor.sh
 No arguments needed. The script audits a predefined list of directories.
+
 Script 4 - Log File Analyzer
 Bash
 
