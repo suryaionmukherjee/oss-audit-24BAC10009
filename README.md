@@ -1,6 +1,6 @@
 Markdown
 
-# OSS Audit - Git### Open Source Software Capstone Project | VITyarthi
+# OSS Audit - Git Open Source Software Capstone Project | VITyarthi
 
 | Field | Details |
 |-------|---------|
