@@ -8,7 +8,7 @@
 # Concepts: read, string concatenation, file writing (>/>>) date command, aliases
 # =============================================================================
 
-# --- Alias concept demonstrated via comment ---
+# Alias concept demonstrated via comment
 # In a real shell session you might use:
 #   alias today='date +%d\ %B\ %Y'
 # We define the same logic as a variable here since aliases don't work in scripts
@@ -71,12 +71,12 @@ PARA3="If I were to build $BUILD and release it under an open-source license, I 
 echo "  $PARA3"   >> "$OUTPUT_FILE"
 echo ""           >> "$OUTPUT_FILE"
 
-# --- Signature ---
+# Signature
 echo "  -- $(whoami) | $TODAY"                        >> "$OUTPUT_FILE"
 echo ""                                               >> "$OUTPUT_FILE"
 echo "==================================================================">> "$OUTPUT_FILE"
 
-# --- Confirm and display the file ---
+# Confirm and display the file
 echo "=================================================================="
 echo "  [✔] Manifesto saved to: $OUTPUT_FILE"
 echo "=================================================================="
