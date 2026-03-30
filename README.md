@@ -84,18 +84,17 @@ Bash
 ./script4_log_analyzer.sh /var/log/syslog WARNING# On Ubuntu, syslog might be at:
 ./script4_log_analyzer.sh /var/log/syslog error# On Fedora/RHEL, try:
 ./script4_log_analyzer.sh /var/log/messages error
-Tip: If you do not have permission to read system logs, create a test log:
-Bash
 
-echo -e "INFO: started\nERROR: disk full\nWARNING: low memory\nERROR: connection failed" > /tmp/test.log
-./script4_log_analyzer.sh /tmp/test.log error
-Script 5 - Open Source Manifesto Generator
+## Open Source Manifesto Generator
 Bash
 
 ./script5_manifesto_generator.sh
 Follow the interactive prompts. The generated manifesto is saved to manifesto_[username].txt in the current directory.
-Dependencies
-DependencyRequired ByInstall CommandbashAll scriptsPre-installed on all Linux distrosgitScript 2sudo apt install git or sudo dnf install gitcoreutils (uname, uptime, date, whoami, du, ls)Scripts 1, 3Pre-installedgrepScripts 2, 4Pre-installedawkScripts 3Pre-installed (part of gawk)Notes
+
+## Dependencies
+DependencyRequired ByInstall CommandbashAll scriptsPre-installed on all Linux distrosgitScript 2sudo apt install git or sudo dnf install gitcoreutils (uname, uptime, date, whoami, du, ls)Scripts 1, 3Pre-installedgrepScripts 2, 4Pre-installedawkScripts 3Pre-installed (part of gawk)
+
+## Notes
 Scripts are written for bash specifically. Running with sh may cause issues on systems where sh is dash (e.g., Ubuntu).
 Script 3 uses du -sh which may show permission denied errors for some system directories - this is expected and harmless (stderr is suppressed).
 Script 4 requires a readable log file. Use the test log example above if system logs are restricted.
