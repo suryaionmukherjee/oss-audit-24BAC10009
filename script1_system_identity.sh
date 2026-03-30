@@ -7,12 +7,12 @@
 # Description: Displays a welcome screen with system info and OSS license details
 # =============================================================================
 
-# --- Student and project variables ---
+# Student and project variables
 STUDENT_NAME="SURYAION MUKHERJEE"        # Storing student name for report output
 REG_NUMBER="24BAC10009"                  # Storing registration number
 SOFTWARE_CHOICE="Git"                    # Chosen open-source software project
 
-# --- Gather system information using command substitution ---
+# Gather system information using command substitution
 KERNEL=$(uname -r)                       # Linux kernel version
 # Read OS info, filter for the name, split at the '=', and remove quote marks
 DISTRO=$(cat /etc/os-release | grep PRETTY_NAME | cut -d= -f2 | tr -d '"')
@@ -22,7 +22,7 @@ UPTIME=$(uptime -p)                      # Human-readable uptime
 CURRENT_DATE=$(date '+%A, %d %B %Y')    # Formatted current date
 CURRENT_TIME=$(date '+%H:%M:%S')        # Current time
 
-# --- Linux kernel license (always GPL v2) ---
+# Linux kernel license (always GPL v2)
 OS_LICENSE="GNU General Public License version 2 (GPL v2)"
 
 # --- Display the system identity report ---
