@@ -52,15 +52,18 @@ Concepts: read -p for interactive input, string interpolation, file writing with
 A Linux system (Ubuntu, Fedora, Debian, CentOS, or any standard distro)
 Bash shell (version 4+) - check with bash --version
 Git installed - check with git --version
-Step 1: Clone the repository
+
+*Step 1: Clone the repository*
 Bash
 
 git clone [https://github.com/suryaionmukherjee/oss-audit-24BAC10009.git](https://github.com/suryaionmukherjee/oss-audit-24BAC10009.git)cd oss-audit-24BAC10009
-Step 2: Make scripts executable
+
+*Step 2: Make scripts executable*
 Bash
 
 chmod +x *.sh
-Step 3: Run each script
+
+*Step 3: Run each script*
 
 Script 1 - System Identity Report
 Bash
@@ -84,15 +87,20 @@ Script 4 - Log File Analyzer
 Bash
 
 Basic usage - search for 'error' in a log file
+
 ./script4_log_analyzer.sh /var/log/syslog# Custom keyword
+
 ./script4_log_analyzer.sh /var/log/syslog WARNING# On Ubuntu, syslog might be at:
+
 ./script4_log_analyzer.sh /var/log/syslog error# On Fedora/RHEL, try:
+
 ./script4_log_analyzer.sh /var/log/messages error
 
 Script 5 - Open Source Manifesto Generator
 Bash
 
 ./script5_manifesto_generator.sh
+
 Follow the interactive prompts. The generated manifesto is saved to manifesto_[username].txt in the current directory.
 
 ## Dependencies
